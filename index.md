@@ -1,3 +1,6 @@
+<div style="font-family: Georgia, serif;">
+
+
 <div style="display: flex; gap: 20px; align-items: flex-start;">
 
   <img src="pantsar.jpeg" alt="Markus Pantsar"
