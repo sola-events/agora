@@ -1,3 +1,9 @@
+<style>
+.site-title { text-transform: none !important; }
+</style>
+
+
+
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <div style="font-family: 'Libre Baskerville', serif;">
