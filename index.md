@@ -8,7 +8,10 @@
 
   <div>
     <h2>Markus Pantsar</h2>
-    <strong>Towards an epistemology of artificial mathematical reasoning</strong>
+    <a href="pantsar.html">
+  <strong>Towards an epistemology of artificial mathematical reasoning</strong>
+</a>
+
     <p>5 March 2026, 3.30–5pm</p>
     <p><em>Click for abstract and bio.</em></p>
   </div>
