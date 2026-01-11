@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markus Pantsar — Agora Speaker Series</title>
+  <style>
+    body {
+      font-family: Aptos, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 18px;
+    }
+    h1 { margin-bottom: 0.2em; }
+    h2 { margin-top: 1.2em; }
+    .meta { opacity: 0.8; margin-bottom: 1.2em; }
+    img {
+      width: 200px;
+      border-radius: 8px;
+      margin: 12px 0 20px;
+    }
+    .back { display: inline-block; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Back to Agora Speaker Series</a>
+
+    <h1>Markus Pantsar</h1>
+    <h2>Towards an epistemology of artificial mathematical reasoning</h2>
+    <div class="meta">5 March 2026 · 3.30–5pm</div>
+
+    <img src="pantsar.jpeg" alt="Markus Pantsar">
+
+    <h2>Abstract</h2>
+    <p>
+      In 2025, both Google DeepMind and OpenAI reported that their large language model
+      (LLM)-based AI systems had achieved gold medal level performance in the
+      International Mathematical Olympiad…
+    </p>
+
+    <h2>Bio</h2>
+    <p>
+      Markus Pantsar is a Guest Professor at the Chair of Theory of Science and Technology,
+      RWTH Aachen University, Germany…
+    </p>
+  </div>
+</body>
+</html>
