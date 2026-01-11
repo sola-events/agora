@@ -1,10 +1,13 @@
-# Agora Speaker Series
+<div style="display: flex; gap: 20px; align-items: flex-start;">
 
-## Markus Pantsar  
-**Towards an epistemology of artificial mathematical reasoning**
+  <img src="markus-pantsar.jpg" alt="Markus Pantsar"
+       style="width: 160px; border-radius: 6px;" />
 
-5 March 2026, 3.30-5pm
+  <div>
+    <h2>Markus Pantsar</h2>
+    <strong>Towards an epistemology of artificial mathematical reasoning</strong>
+    <p>5 March 2026, 3.30–5pm</p>
+    <p><em>Click for abstract and bio.</em></p>
+  </div>
 
-
-
-Click for abstract and bio.
+</div>
