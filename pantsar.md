@@ -1,3 +1,5 @@
+<div style="font-family: Roboto;">
+
 # Markus Pantsar
 
 ## Towards an epistemology of artificial mathematical reasoning
@@ -11,3 +13,6 @@ In 2025, both Google DeepMind and OpenAI reported that their large language mode
 Markus Pantsar is a Guest Professor at the Chair of Theory of Science and Technology, RWTH Aachen University, Germany. He holds the Title of Docent in theoretical philosophy at the University of Helsinki, Finland. He has published extensively in the philosophy of mathematics, including the book “Numerical Cognition and the Epistemology of Arithmetic” (Cambridge University Press, 2024). In recent years, he has focused on the philosophy of artificial intelligence, in particular the use of AI systems in mathematical contexts.
 
 [← Back to Agora Speaker Series](index.md)
+
+</div>
+
