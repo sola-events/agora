@@ -1,4 +1,7 @@
-<div style="font-family: Aptos;">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+<div style="font-family: 'Libre Baskerville', serif;">
+
 
 # Markus Pantsar
 
