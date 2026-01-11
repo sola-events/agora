@@ -1,6 +1,6 @@
 <div style="display: flex; gap: 20px; align-items: flex-start;">
 
-  <img src="pantsar.jpg" alt="Markus Pantsar"
+  <img src="pantsar.jpeg" alt="Markus Pantsar"
        style="width: 160px; border-radius: 6px;" />
 
   <div>
