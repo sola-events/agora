@@ -12,22 +12,56 @@
     .wrap { max-width: 960px; margin: 0 auto; padding: 28px 18px; }
     h1 { font-size: 34px; margin-bottom: 12px; }
     .intro { line-height: 1.6; margin-bottom: 24px; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
-    .card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; }
-    .card { display: flex; align-items: center; }
-.card img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
+   .event-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 760px;
+  margin: 40px auto;
+  align-items: center;
 }
 
-   .pad { padding: 14px; margin-left: 12px; }
+.event-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-    .meta { font-size: 14px; opacity: 0.8; margin-bottom: 8px; }
-    .title { font-size: 18px; }
-    .btn { display: inline-block; margin-top: 8px; font-size: 14px; padding: 8px 10px; border: 1px solid #333; border-radius: 8px; }
+.event-text {
+  aspect-ratio: 1 / 1;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-text h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.talk-title {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.more {
+  font-size: 14px;
+  text-decoration: none;
+}
+.more:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 <body>
