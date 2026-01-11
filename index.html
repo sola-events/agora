@@ -10,16 +10,48 @@
     body { font-family: 'Crimson Pro', serif; margin: 0; }
 
     .wrap { max-width: 960px; margin: 0 auto; padding: 28px 18px; }
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  position: sticky;
+  top: 24px;
+}
+
+@media (max-width: 900px) {
+  .left {
+    position: static;
+  }
+}
+
+.events {
+  display: grid;
+  gap: 24px;
+}
+
+    
     h1 { font-size: 34px; margin-bottom: 12px; }
     .intro { line-height: 1.6; margin-bottom: 24px; }
    .event-center {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 24px;
   max-width: 520px;
-  margin: 40px auto;
+  margin: 0;             /* was auto-centering */
   align-items: center;
 }
+
 
 .event-photo img {
   width: 100%;
@@ -66,27 +98,46 @@
 </head>
 <body>
   <div class="wrap">
+   <div class="page">
+
+  <div class="left">
     <h1>Agora Speaker Series</h1>
     <p class="intro">
-      A seminar series hosted by the School of Liberal Arts at the University of Wollongong. Talks are held in Building 20, Room 5 at our Keiraville campus. Drinks and snacks with the speaker from 5pm @ Unibar. All welcome.
+      [Short 1–2 sentence description of the series.]
     </p>
 
-    <h2>Upcoming Events</h2>
-
- <div class="event-center">
-  <div class="event-photo">
-    <img src="pantsar.jpeg" alt="Markus Pantsar">
+    <p><strong>When:</strong> Thursdays, 3.30–5pm (AEST)</p>
+    <p><strong>Format:</strong> Online (Zoom)</p>
+    <p><strong>Register:</strong> [Put your registration link text here]</p>
+    <p><strong>Contact:</strong> sola-enquiries@uow.edu.au</p>
   </div>
 
-  <div class="event-text">
-    <h3>Markus Pantsar</h3>
-    <p class="talk-title">
-      Towards an epistemology of artificial mathematical reasoning
-    </p>
-    <p class="meta">Thu, 5 March 2026 · 3.30–5pm · Online</p>
-    <a class="more" href="pantsar.html">Details →</a>
+  <div class="right">
+    <h2>Upcoming</h2>
+
+    <div class="events">
+
+      <!-- Event box 1 -->
+      <div class="event-center">
+        <div class="event-photo">
+          <img src="pantsar.jpeg" alt="Markus Pantsar">
+        </div>
+
+        <div class="event-text">
+          <h3>Markus Pantsar</h3>
+          <p class="talk-title">Towards an epistemology of artificial mathematical reasoning</p>
+          <p class="meta">Thu, 5 March 2026 · 3.30–5pm</p>
+          <a class="more" href="pantsar.html">Details →</a>
+        </div>
+      </div>
+
+      <!-- Add more event-center blocks here later -->
+
+    </div>
   </div>
+
 </div>
+
 
 </body>
 </html>
