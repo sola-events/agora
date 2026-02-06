@@ -135,15 +135,44 @@
       gap: 8px;
     }
 
-    <h2 class="event-name">
-  <a href="pantsar.html">Markus Pantsar</a>
-</h2>
-<p class="event-title">
-  Towards an epistemology of artificial mathematical reasoning
-</p>
-<p class="event-when">
-  Thu, 5 March 2026 · 3.30–5pm
-</p>
+       .event-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+
+        .event-name {
+      font-size: 24px;          /* smaller than before */
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+
+    .event-name a {
+      color: var(--uow-navy);   /* same colour as heading */
+      text-decoration: none;    /* no underline */
+      transition: color 0.15s ease;
+    }
+
+    .event-name a:visited {
+      color: var(--uow-navy);   /* don’t turn purple */
+    }
+
+    .event-name a:hover {
+      color: #4b5563;           /* soft grey on hover */
+      text-decoration: none;    /* still no underline */
+    }
+
+    .event-title {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+
+    .event-when {
+      font-size: 14px;
+      margin: 0;
+      color: #4b5563;
+    }
 
 
     .event-details {
@@ -153,6 +182,9 @@
       text-decoration: none;
       color: var(--uow-link);
     }
+
+
+
 
     .event-details:hover {
       text-decoration: underline;
