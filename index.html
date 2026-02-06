@@ -136,18 +136,13 @@
 }
 
 
-       .event-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 8px;
-    }
 
-        .event-name {
-      font-size: 24px;          /* smaller than before */
-      margin: 0 0 6px;
-      font-weight: 600;
-    }
+       .event-name {
+  font-size: 24px;
+  margin: 0 0 2px;   /* was 6px */
+  font-weight: 600;
+}
+
 
     .event-name a {
       color: var(--uow-navy);   /* same colour as heading */
@@ -185,11 +180,12 @@
     }
 
 
-    .event-affiliation {
-      font-size: 14px;
-      color: #4b5563;   /* softer grey */
-      margin: 0 0 6px;
-    }
+  .event-meta {
+  font-size: 14px;
+  color: #4b5563;      /* soft grey */
+  margin: 0 0 3px;     /* tiny gap under each line */
+}
+
 
 
     .event-details:hover {
