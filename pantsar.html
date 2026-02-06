@@ -6,14 +6,14 @@
 
   <title>Markus Pantsar · Agora Speaker Series · UOW</title>
 
-  <!-- UOW-ish font -->
+  <!-- Font to match the other pages -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --uow-navy: #111827;      /* dark text colour */
-      --uow-accent: #002b5c;    /* deep blue */
-      --uow-light: #e5e7eb;     /* light grey line */
+      --uow-navy: #111827;   /* dark text colour */
+      --uow-light: #e5e7eb;  /* light grey line */
+      --uow-link: #111827;   /* simple dark link like Miyahara page */
     }
 
     * {
@@ -30,26 +30,22 @@
     .wrap {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 56px 18px 72px;
+      padding: 40px 18px 72px;
     }
 
-    /* back button */
+    /* simple text back link (no pill) */
     .back-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 13px;
+      font-size: 14px;
+      color: var(--uow-link);
       text-decoration: none;
-      color: var(--uow-accent);
-      border-radius: 999px;
-      padding: 5px 12px;
-      border: 1px solid var(--uow-light);
-      background: #f9fafb;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
 
     .back-link:hover {
-      background: #e5e7eb;
+      text-decoration: underline;
     }
 
     /* hero section */
@@ -57,16 +53,16 @@
       display: grid;
       grid-template-columns: minmax(0, 1.5fr) 260px;
       gap: 40px;
-      align-items: flex-start;
-      margin-bottom: 40px;
+      align-items: center;
+      margin-bottom: 56px;
     }
 
     .hero-title {
-      font-size: 34px;
+      font-size: 36px;
       line-height: 1.15;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin: 0 0 8px;
+      margin: 0 0 12px;
     }
 
     .hero-subtitle {
@@ -97,7 +93,7 @@
     .section h2 {
       font-size: 20px;
       font-weight: 600;
-      margin: 0 0 14px;
+      margin: 0 0 18px;
     }
 
     .section p {
@@ -106,9 +102,16 @@
       margin: 0 0 12px;
     }
 
+    hr {
+      border: none;
+      border-top: 1px solid var(--uow-light);
+      margin: 40px 0;
+    }
+
     @media (max-width: 860px) {
       .hero {
         grid-template-columns: 1fr;
+        align-items: flex-start;
       }
 
       .hero-photo {
@@ -119,7 +122,7 @@
 </head>
 <body>
   <div class="wrap">
-    <a class="back-link" href="index.html">← Back to Agora Series</a>
+    <a class="back-link" href="index.html">← Back to Agora Speaker Series</a>
 
     <div class="hero">
       <div class="hero-text">
@@ -128,8 +131,7 @@
           Towards an epistemology of artificial mathematical reasoning
         </p>
         <p class="hero-meta">
-          5 March 2026 · 3.30–5pm<br>
-          Agora Speaker Series · School of Liberal Arts, University of Wollongong
+          5 March 2026 · 3.30–5pm
         </p>
       </div>
 
@@ -138,13 +140,15 @@
       </div>
     </div>
 
+    <hr>
+
     <div class="section">
       <h2>Abstract</h2>
       <p>
         In 2025, both Google DeepMind and OpenAI reported that their large language model
         (LLM)-based AI systems had achieved gold medal level performance in the
         International Mathematical Olympiad. In addition, together with research
-        mathematicians, DeepMind has reported progress in solving research-level
+        mathematicians, DeepMind has made reported progress in solving research-level
         mathematical problems with their AI system.
       </p>
       <p>
@@ -174,8 +178,8 @@
         Technology, RWTH Aachen University, Germany. He holds the Title of Docent
         in theoretical philosophy at the University of Helsinki, Finland. He has
         published extensively in the philosophy of mathematics, including the book
-        <em>Numerical Cognition and the Epistemology of Arithmetic</em> (Cambridge
-        University Press, 2024).
+        <em>Numerical Cognition and the Epistemology of Arithmetic</em>
+        (Cambridge University Press, 2024).
       </p>
       <p>
         In recent years, he has focused on the philosophy of artificial
