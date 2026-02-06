@@ -6,14 +6,14 @@
 
   <title>Markus Pantsar · Agora Speaker Series · UOW</title>
 
-  <!-- UOW primary font -->
+  <!-- UOW-ish font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --uow-navy: #111827;
-      --uow-accent: #002b5c;
-      --uow-light: #f3f4f6;
+      --uow-navy: #111827;      /* dark text colour */
+      --uow-accent: #002b5c;    /* deep blue */
+      --uow-light: #e5e7eb;     /* light grey line */
     }
 
     * {
@@ -27,158 +27,7 @@
       background: #ffffff;
     }
 
-    a {
-      color: var(--uow-accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .wrap {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 32px 18px 64px;
-    }
-
-    /* Back button */
-
-    .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      border: 1px solid #e5e7eb;
-      background: #f9fafb;
-      color: #111827;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
-
-    .back-btn:hover {
-      background: #e5e7eb;
-      text-decoration: none;
-    }
-
-    /* Top speaker block */
-
-    .speaker-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.8fr);
-      gap: 40px;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-
-    @media (max-width: 800px) {
-      .speaker-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    h1 {
-      font-size: 36px;
-      line-height: 1.2;
-      margin: 0 0 8px;
-      letter-spacing: -0.02em;
-    }
-
-    .talk-title {
-      font-size: 18px;
-      margin: 0 0 8px;
-      font-weight: 500;
-    }
-
-    .talk-meta {
-      font-size: 14px;
-      color: #4b5563;
-      margin: 0;
-    }
-
-    .speaker-photo img {
-      width: 100%;
-      max-width: 320px;
-      display: block;
-      object-fit: cover;
-      margin-left: auto;
-    }
-
-    /* Sections */
-
-    .section {
-      margin-top: 32px;
-      max-width: 900px;
-    }
-
-    .section h2 {
-      font-size: 20px;
-      margin: 0 0 12px;
-    }
-
-    .section p {
-      font-size: 15px;
-      line-height: 1.7;
-      margin: 0 0 14px;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <a href="index.html" class="back-btn">← Back to Agora Series</a>
-
-    <div class="speaker-layout">
-      <div>
-        <h1>Markus Pantsar</h1>
-        <p class="talk-title">
-          Towards an epistemology of artificial mathematical reasoning
-        </p>
-        <p class="talk-meta">
-          5 March 2026 · 3.30–5pm
-        </p>
-      </div>
-
-      <div class="speaker-photo">
-        <img src="pantsar.jpeg" alt="Markus Pantsar">
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Abstract</h2>
-      <p>
-        In 2025, both Google DeepMind and OpenAI reported that their large language model (LLM)-based
-        AI systems had achieved gold medal level performance in the International Mathematical Olympiad.
-        In addition, together with research mathematicians, DeepMind has made reported progress in solving
-        research-level mathematical problems with their AI system. These developments suggest that in the near
-        future important parts of mathematical theorem proving may be outsourced to LLM-based AI systems, what
-        AI developers call large reasoning models (LRM). However, the LRMs still commonly make errors in simple
-        reasoning tasks, prompting questions about their reliability as mathematical (and other) tools.
-      </p>
-      <p>
-        In this talk, I want to take first steps toward establishing an epistemology of artificial mathematical
-        reasoning in AI systems. I divide the topic into two questions. First, in the “knowledge of” question we
-        ask how we can identify reasoning ability (if any) in AI systems. Second, in the “knowledge through”
-        question we ask how mathematical knowledge generation takes place with the help of AI reasoning systems
-        (if any). Finally, I will consider the consequences to mathematical practice and mathematical communities
-        that such AI systems could have.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Bio</h2>
-      <p>
-        Markus Pantsar is a Guest Professor at the Chair of Theory of Science and Technology, RWTH Aachen
-        University, Germany. He holds the Title of Docent in theoretical philosophy at the University of Helsinki,
-        Finland. He has published extensively in the philosophy of mathematics, including the book
-        “Numerical Cognition and the Epistemology of Arithmetic” (Cambridge University Press, 2024). In recent
-        years, he has focused on the philosophy of artificial intelligence, in particular the use of AI systems
-        in mathematical contexts.
-      </p>
-    </div>
-  </div>
-</body>
-</html>
+      paddin
