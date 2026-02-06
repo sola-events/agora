@@ -1,82 +1,233 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Workshop</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>UOW Expanding Minds Research Series</title>
+
+  <!-- UOW primary font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --uow-navy: #111827;      /* dark text colour */
+      --uow-accent: #002b5c;    /* deep UOW-style blue */
+      --uow-light: #f3f4f6;     /* light grey for lines / backgrounds */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Crimson Pro', serif;
       margin: 0;
+      font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--uow-navy);
+      background: #ffffff;
     }
 
     .wrap {
-      max-width: 720px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 120px 18px;
+      padding: 72px 18px 64px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--uow-accent);
+      color: #ffffff;
+      margin-bottom: 16px;
     }
 
     h1 {
-      font-size: 34px;
-      margin-bottom: 20px;
+      font-size: 40px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 24px;
     }
 
-    p {
+    .intro {
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0 0 36px;
+    }
+
+    .info-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .info-group {
+      margin-bottom: 12px;
+    }
+
+    .label {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      margin: 0;
+      font-size: 15px;
       line-height: 1.6;
-      margin-bottom: 16px;
+    }
+
+    .schedule {
+      border-top: 1px solid var(--uow-light);
+      padding-top: 24px;
+      margin-top: 8px;
+    }
+
+    .schedule h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .day {
+      margin-bottom: 26px;
+    }
+
+    .day-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .slot {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 16px;
+      row-gap: 6px;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .slot-time {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .slot-desc {
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        padding-top: 48px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .info-block {
+        grid-template-columns: 1fr;
+      }
+
+      .slot {
+        grid-template-columns: 1fr;
+      }
+
+      .slot-time {
+        white-space: normal;
+      }
     }
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <h1>UOW Expanding Minds Research Series 
+    <span class="badge">School of Liberal Arts · UOW</span>
 
+    <h1>UOW Expanding Minds Research Series</h1>
 
- </h1>
-
-    <p>
-      The Expanding Minds Research Series hosted by the School of Liberal Arts is a platform for academics based at and visiting the University of Wollongong to share their latest research and scholarship. All are most welcome and there is no need to register.  
-
-All talks will be held in-person at the University of Wollongong’s Keiraville campus in the Research Hub, Building 19, Room 2072B. 
-
- 
-
- 
+    <p class="intro">
+      The Expanding Minds Research Series hosted by the School of Liberal Arts is a platform for academics
+      based at and visiting the University of Wollongong to share their latest research and scholarship.
+      All are most welcome and there is no need to register. All talks will be held in-person at the
+      University of Wollongong’s Keiraville campus in the Research Hub, Building 19, Room 2072B.
     </p>
 
-    <p>
-      <strong>Date:</strong><br>
-      February 26-27, 2026
-    </p>
+    <div class="info-block">
+      <div>
+        <div class="info-group">
+          <div class="label">Date</div>
+          <p class="value">February 26–27, 2026</p>
+        </div>
+      </div>
 
-    <p>
-      <strong>Location:</strong><br>
-      Building 19, Room 2072B
-    </p>
+      <div>
+        <div class="info-group">
+          <div class="label">Location</div>
+          <p class="value">Research Hub, Building 19, Room 2072B<br>University of Wollongong, Keiraville campus</p>
+        </div>
+      </div>
+    </div>
 
-    <p>
-      <p>
-  <strong>Schedule – Day 1</strong><br>
-  9:00–10:00am – Benedetta Cogo (University of Wollongong)<br>
-  10:00–11:00am – Dan Hutto (University of Wollongong)<br>
-  11:00–12:30pm – Break<br>
-  12:30–1:30pm – Elena Walsh (University of Wollongong), GenAI and Mental Health<br>
-  1:30–2:30pm – Erik Myin (University of Antwerp), Smart Animals Without Content<br>
-  3:00–4:00pm – Jorge Gomez (University of Wollongong), A Sender–Receiver Model for the Evolution of Showing and Expressing
-</p>
+    <div class="schedule">
+      <h2>Schedule</h2>
 
-<p>
-  <strong>Schedule – Day 2</strong><br>
-  9:30–10:30am – Marco Facchin (University of Antwerp), Explaining the Illusion of Content<br>
-  10:30–11:30am – Michael Kirchhoff (University of Wollongong), Putting Place Cells in Their Place
-</p>
+      <div class="day">
+        <div class="day-title">Day 1 – Thursday 26 February</div>
 
-    </p>
+        <div class="slot">
+          <div class="slot-time">9:00–10:00am</div>
+          <p class="slot-desc">Benedetta Cogo (University of Wollongong)</p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">10:00–11:00am</div>
+          <p class="slot-desc">Dan Hutto (University of Wollongong)</p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">11:00–12:30pm</div>
+          <p class="slot-desc">Break</p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">12:30–1:30pm</div>
+          <p class="slot-desc">Elena Walsh (University of Wollongong), <em>GenAI and Mental Health</em></p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">1:30–2:30pm</div>
+          <p class="slot-desc">Erik Myin (University of Antwerp), <em>Smart Animals Without Content</em></p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">3:00–4:00pm</div>
+          <p class="slot-desc">Jorge Gomez (University of Wollongong), <em>A Sender–Receiver Model for the Evolution of Showing and Expressing</em></p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-title">Day 2 – Friday 27 February</div>
+
+        <div class="slot">
+          <div class="slot-time">9:30–10:30am</div>
+          <p class="slot-desc">Marco Facchin (University of Antwerp), <em>Explaining the Illusion of Content</em></p>
+        </div>
+
+        <div class="slot">
+          <div class="slot-time">10:30–11:30am</div>
+          <p class="slot-desc">Michael Kirchhoff (University of Wollongong), <em>Putting Place Cells in Their Place</em></p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
