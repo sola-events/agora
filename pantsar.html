@@ -17,6 +17,27 @@
       --uow-link: #4338ca;
     }
 
+        .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;          /* pill shape */
+      border: 1px solid #e5e7eb;     /* light grey border */
+      background: #f9fafb;           /* pale grey fill */
+      color: #111827;                /* dark navy text */
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .back-btn:hover {
+      background: #e5e7eb;           /* a bit darker on hover */
+    }
+
+
     * {
       box-sizing: border-box;
     }
@@ -136,9 +157,7 @@
     }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <a href="/agora/" class="back-link">← Back to Agora Speaker Series</a>
+    <a href="index.html" class="back-btn">← Back to Agora Series</a>
 
     <header class="header">
       <div>
