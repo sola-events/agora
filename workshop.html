@@ -102,6 +102,39 @@
       margin-bottom: 10px;
     }
 
+        .rsvp-wrap {
+      margin: 8px 0 40px;
+    }
+
+    .rsvp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 24px;
+      border-radius: 999px;
+      background: var(--uow-accent); /* deep UOW blue */
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .rsvp-btn:hover {
+      background: #00193a; /* slightly darker blue on hover */
+    }
+
+    .rsvp-note {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+
    .slot {
   display: grid;
   grid-template-columns: 150px 1fr;  /* fixed width for the time column */
@@ -177,6 +210,21 @@
         </div>
       </div>
     </div>
+
+        <div class="rsvp-wrap">
+      <a
+        class="rsvp-btn"
+        href="https://forms.gle/ea8j2N39tJGFp71D8"
+        target="_blank"
+        rel="noopener"
+      >
+        RSVP for catering
+      </a>
+      <div class="rsvp-note">
+        Please RSVP if you plan to attend, to help us with room setup and catering.
+      </div>
+    </div>
+
 
     <div class="schedule">
       <h2>Schedule</h2>
