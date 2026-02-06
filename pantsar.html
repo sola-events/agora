@@ -30,4 +30,159 @@
     .wrap {
       max-width: 1120px;
       margin: 0 auto;
-      paddin
+      padding: 56px 18px 72px;
+    }
+
+    /* back button */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--uow-accent);
+      border-radius: 999px;
+      padding: 5px 12px;
+      border: 1px solid var(--uow-light);
+      background: #f9fafb;
+      margin-bottom: 28px;
+    }
+
+    .back-link:hover {
+      background: #e5e7eb;
+    }
+
+    /* hero section */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) 260px;
+      gap: 40px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .hero-title {
+      font-size: 34px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0 0 12px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #4b5563;
+      margin: 0;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* content sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 14px;
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 12px;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photo {
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="index.html">← Back to Agora Series</a>
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">Markus Pantsar</h1>
+        <p class="hero-subtitle">
+          Towards an epistemology of artificial mathematical reasoning
+        </p>
+        <p class="hero-meta">
+          5 March 2026 · 3.30–5pm<br>
+          Agora Speaker Series · School of Liberal Arts, University of Wollongong
+        </p>
+      </div>
+
+      <div class="hero-photo">
+        <img src="pantsar.jpeg" alt="Markus Pantsar">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Abstract</h2>
+      <p>
+        In 2025, both Google DeepMind and OpenAI reported that their large language model
+        (LLM)-based AI systems had achieved gold medal level performance in the
+        International Mathematical Olympiad. In addition, together with research
+        mathematicians, DeepMind has reported progress in solving research-level
+        mathematical problems with their AI system.
+      </p>
+      <p>
+        These developments suggest that in the near future important parts of
+        mathematical theorem proving may be outsourced to LLM-based AI systems,
+        what AI developers call large reasoning models (LRM). However, the LRMs
+        still commonly make errors in simple reasoning tasks, prompting questions
+        about their reliability as mathematical (and other) tools.
+      </p>
+      <p>
+        In this talk, I want to take first steps toward establishing an epistemology
+        of artificial mathematical reasoning, in order to set up a systematic
+        framework for studying mathematical reasoning in AI systems. I divide the
+        topic into two questions. First, in the “knowledge of” question we ask how
+        we can identify reasoning ability (if any) in AI systems. Second, in the
+        “knowledge through” question we ask how mathematical knowledge generation
+        takes place with the help of AI reasoning systems (if any). Finally, I will
+        consider the consequences to mathematical practice and mathematical
+        communities that such AI systems could have.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Bio</h2>
+      <p>
+        Markus Pantsar is a Guest Professor at the Chair of Theory of Science and
+        Technology, RWTH Aachen University, Germany. He holds the Title of Docent
+        in theoretical philosophy at the University of Helsinki, Finland. He has
+        published extensively in the philosophy of mathematics, including the book
+        <em>Numerical Cognition and the Epistemology of Arithmetic</em> (Cambridge
+        University Press, 2024).
+      </p>
+      <p>
+        In recent years, he has focused on the philosophy of artificial
+        intelligence, in particular the use of AI systems in mathematical
+        contexts.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
