@@ -4,16 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Markus Pantsar · Agora Speaker Series · UOW</title>
+  <title>Katsunori Miyahara — Agora Speaker Series</title>
 
-  <!-- Font to match the other pages -->
+  <!-- UOW primary font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --uow-navy: #111827;   /* dark text colour */
-      --uow-light: #e5e7eb;  /* light grey line */
-      --uow-link: #111827;   /* simple dark link like Miyahara page */
+      --uow-navy: #111827;
+      --uow-accent: #002b5c;
+      --uow-light: #f3f4f6;
+      --uow-link: #4338ca;
     }
 
     * {
@@ -27,166 +28,151 @@
       background: #ffffff;
     }
 
-    .wrap {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 40px 18px 72px;
+    a {
+      color: var(--uow-link);
     }
 
-    /* simple text back link (no pill) */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 18px 64px;
+    }
+
     .back-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 14px;
-      color: var(--uow-link);
+      font-size: 13px;
       text-decoration: none;
-      margin-bottom: 32px;
+      color: #4b5563;
+      margin-bottom: 24px;
     }
 
     .back-link:hover {
+      color: var(--uow-link);
       text-decoration: underline;
     }
 
-    /* hero section */
-    .hero {
+    .header {
       display: grid;
-      grid-template-columns: minmax(0, 1.5fr) 260px;
-      gap: 40px;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.9fr);
+      gap: 32px;
       align-items: center;
-      margin-bottom: 56px;
+      margin-bottom: 40px;
     }
 
-    .hero-title {
-      font-size: 36px;
-      line-height: 1.15;
-      font-weight: 700;
+    h1 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 10px;
       letter-spacing: -0.02em;
-      margin: 0 0 12px;
+      font-weight: 700;
     }
 
-    .hero-subtitle {
-      font-size: 18px;
-      line-height: 1.4;
-      margin: 0 0 12px;
-    }
-
-    .hero-meta {
-      font-size: 14px;
+    .subtitle {
+      font-size: 17px;
       line-height: 1.6;
+      margin: 0 0 10px;
+      font-weight: 500;
+    }
+
+    .meta {
+      font-size: 14px;
       color: #4b5563;
       margin: 0;
     }
 
-    .hero-photo img {
+    .photo img {
       width: 100%;
-      height: auto;
+      max-width: 280px;
       display: block;
       object-fit: cover;
+      margin-left: auto;
     }
 
-    /* content sections */
     .section {
-      margin-bottom: 40px;
+      border-top: 1px solid var(--uow-light);
+      padding-top: 24px;
+      margin-top: 12px;
     }
 
     .section h2 {
-      font-size: 20px;
+      font-size: 22px;
+      margin: 0 0 16px;
       font-weight: 600;
-      margin: 0 0 18px;
     }
 
     .section p {
       font-size: 15px;
       line-height: 1.7;
-      margin: 0 0 12px;
+      margin: 0 0 14px;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid var(--uow-light);
-      margin: 40px 0;
-    }
-
-    @media (max-width: 860px) {
-      .hero {
-        grid-template-columns: 1fr;
-        align-items: flex-start;
+    @media (max-width: 800px) {
+      .wrap {
+        padding-top: 40px;
       }
 
-      .hero-photo {
-        max-width: 260px;
+      .header {
+        grid-template-columns: 1fr;
+      }
+
+      .photo img {
+        margin: 0;
+        max-width: 220px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <a class="back-link" href="index.html">← Back to Agora Speaker Series</a>
+    <a href="/agora/" class="back-link">← Back to Agora Speaker Series</a>
 
-    <div class="hero">
-      <div class="hero-text">
-        <h1 class="hero-title">Markus Pantsar</h1>
-        <p class="hero-subtitle">
-          Towards an epistemology of artificial mathematical reasoning
-        </p>
-        <p class="hero-meta">
-          5 March 2026 · 3.30–5pm
-        </p>
+    <header class="header">
+      <div>
+        <h1>Katsunori Miyahara</h1>
+        <p class="subtitle">Artificial agency and the requirement of individuality</p>
+        <p class="meta">12 March 2026 · 3.30–5pm</p>
       </div>
 
-      <div class="hero-photo">
-        <img src="pantsar.jpeg" alt="Markus Pantsar">
+      <div class="photo">
+        <!-- When you have a headshot, upload it as miyahara.jpeg in this folder -->
+        <img src="miyahara.jpeg" alt="Katsunori Miyahara">
       </div>
-    </div>
+    </header>
 
-    <hr>
-
-    <div class="section">
+    <section class="section">
       <h2>Abstract</h2>
       <p>
-        In 2025, both Google DeepMind and OpenAI reported that their large language model
-        (LLM)-based AI systems had achieved gold medal level performance in the
-        International Mathematical Olympiad. In addition, together with research
-        mathematicians, DeepMind has made reported progress in solving research-level
-        mathematical problems with their AI system.
+        In 2025, both Google DeepMind and OpenAI reported that their large language model (LLM)-based AI systems had achieved gold medal level performance in the International Mathematical Olympiad. In addition, together with research mathematicians, DeepMind has made reported progress in solving research-level mathematical problems with their AI system.
       </p>
       <p>
-        These developments suggest that in the near future important parts of
-        mathematical theorem proving may be outsourced to LLM-based AI systems,
-        what AI developers call large reasoning models (LRM). However, the LRMs
-        still commonly make errors in simple reasoning tasks, prompting questions
-        about their reliability as mathematical (and other) tools.
+        These developments suggest that in the near future important parts of mathematical theorem proving may be outsourced to LLM-based AI systems, what AI developers call large reasoning models (LRM). However, the LRMs still commonly make errors in simple reasoning tasks, prompting questions about their reliability as mathematical (and other) tools.
       </p>
       <p>
-        In this talk, I want to take first steps toward establishing an epistemology
-        of artificial mathematical reasoning, in order to set up a systematic
-        framework for studying mathematical reasoning in AI systems. I divide the
-        topic into two questions. First, in the “knowledge of” question we ask how
-        we can identify reasoning ability (if any) in AI systems. Second, in the
-        “knowledge through” question we ask how mathematical knowledge generation
-        takes place with the help of AI reasoning systems (if any). Finally, I will
-        consider the consequences to mathematical practice and mathematical
-        communities that such AI systems could have.
-      </p>
-    </div>
+        In this talk, I want to take first steps toward establishing an epistemology of artificial mathematical reasoning, in order to set up a systematic framework for studying mathematical reasoning in AI systems. I divide the topic into two questions. First, in the “knowledge of” question we ask how we can identify reasoning ability (if any) in AI systems. Second, in the “knowledge through” question we ask how mathematical knowledge generation takes place with the help of AI reasoning systems (if any). Finally, I will consider the consequences to mathematical practice and mathematical communities that such AI systems could have.
+      
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Bio</h2>
       <p>
-        Markus Pantsar is a Guest Professor at the Chair of Theory of Science and
-        Technology, RWTH Aachen University, Germany. He holds the Title of Docent
-        in theoretical philosophy at the University of Helsinki, Finland. He has
-        published extensively in the philosophy of mathematics, including the book
-        <em>Numerical Cognition and the Epistemology of Arithmetic</em>
-        (Cambridge University Press, 2024).
+        Markus Pantsar is a Guest Professor at the Chair of Theory of Science and Technology, RWTH Aachen University, Germany. He holds the Title of Docent in theoretical philosophy at the University of Helsinki, Finland. He has published extensively in the philosophy of mathematics, including the book Numerical Cognition and the Epistemology of Arithmetic (Cambridge University Press, 2024). In recent years, he has focused on the philosophy of artificial intelligence, in particular the use of AI systems in mathematical contexts.
       </p>
-      <p>
-        In recent years, he has focused on the philosophy of artificial
-        intelligence, in particular the use of AI systems in mathematical
-        contexts.
-      </p>
-    </div>
+      
+    </section>
   </div>
 </body>
 </html>
