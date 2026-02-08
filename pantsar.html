@@ -42,6 +42,39 @@
       padding: 56px 18px 64px;
     }
 
+    /* RSVP pill + note */
+.rsvp-row {
+  margin-top: 10px;          /* small gap under the date */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b5563;
+  flex-wrap: wrap;
+}
+
+.btn-rsvp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 14px;         /* a bit smaller = “little pill” */
+  border-radius: 999px;
+  background: var(--uow-accent);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-rsvp:hover {
+  background: #011a3a;
+  text-decoration: none;
+}
+
+
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -149,6 +182,19 @@
         <p class="subtitle">Towards an epistemology of artificial mathematical reasoning</p>
         <p class="meta">5 March 2026 · 3.30–5pm</p>
       </div>
+
+      <div class="rsvp-row">
+  <a
+    href="https://forms.gle/ea8j2N39tJGFp71D8"
+    class="btn-rsvp"
+    target="_blank"
+    rel="noopener"
+  >
+    RSVP
+  </a>
+  <span>Appreciated but not required.</span>
+</div>
+
 
       <div class="photo">
         <!-- When you have a headshot, upload it as miyahara.jpeg in this folder -->
