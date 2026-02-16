@@ -71,7 +71,7 @@
     .meta-block {
       font-size: 15px;
       line-height: 1.6;
-      margin-bottom: 12px;
+      margin-bottom: 12px;   /* same spacing above/below each heading block */
     }
 
     .meta-label {
@@ -97,6 +97,10 @@
       font-size: 22px;
       font-weight: 600;
       margin: 4px 0 20px;
+    }
+
+    .past-heading {
+      margin-top: 40px;   /* extra space above “Past events” */
     }
 
     .events {
@@ -225,8 +229,6 @@
           </p>
         </div>
 
-      
-
         <!-- After the talk -->
         <div class="meta-block">
           <div class="meta-label">After the talk</div>
@@ -240,12 +242,12 @@
           <div class="meta-label">Contact</div>
           <p class="meta-value">
             For queries or to join our mailing list, email
-            <a href="mailto:sola-events@uow.edu.au">sola-events@uow.edu.au</a>
+            <a href="mailto:sola-events@uow.edu.au">sola-events@uow.edu.au</a>.
           </p>
         </div>
       </div> <!-- end .left -->
 
-      <!-- RIGHT: upcoming events -->
+      <!-- RIGHT: upcoming + past events -->
       <div class="right">
         <div class="right-heading">Upcoming</div>
 
@@ -287,7 +289,31 @@
               </p>
             </div>
           </div>
-        </div> <!-- end .events -->
+        </div> <!-- end .events (upcoming) -->
+
+        <!-- Past events -->
+        <div class="right-heading past-heading">Past events</div>
+
+        <div class="events">
+          <!-- Example past event — duplicate + edit as needed -->
+          <div class="event">
+            <div class="event-photo">
+              <img src="example-past.jpeg" alt="Past speaker">
+            </div>
+            <div class="event-text">
+              <h2 class="event-name">
+                <a href="#">Past Speaker Name</a>
+              </h2>
+              <p class="event-meta">Affiliation</p>
+              <p class="event-title">
+                Past talk title goes here
+              </p>
+              <p class="event-meta">
+                Thu, 10 October 2024
+              </p>
+            </div>
+          </div>
+        </div> <!-- end .events (past) -->
       </div> <!-- end .right -->
     </div> <!-- end .layout -->
   </div> <!-- end .wrap -->
