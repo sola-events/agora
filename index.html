@@ -99,10 +99,6 @@
       margin: 4px 0 20px;
     }
 
-    .past-heading {
-      margin-top: 40px;   /* extra space above “Past Events” */
-    }
-
     .events {
       display: flex;
       flex-direction: column;
@@ -163,6 +159,39 @@
       font-size: 14px;
       color: #4b5563;
       margin: 0 0 3px;
+    }
+
+    /* Past events section */
+
+    .past-heading {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 40px 0 12px;
+    }
+
+    .past-events {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .past-event {
+      border: 1px solid var(--uow-light);
+      padding: 14px 16px;
+      background: #ffffff;
+    }
+
+    .past-event-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+
+    .past-event-meta {
+      font-size: 14px;
+      color: #4b5563;
+      margin: 0 0 2px;
     }
 
     @media (max-width: 900px) {
@@ -289,31 +318,25 @@
               </p>
             </div>
           </div>
-        </div> <!-- end .events (upcoming) -->
+        </div> <!-- end .events -->
 
         <!-- Past events -->
-        <div class="right-heading past-heading">Past Events</div>
-
-        <div class="events">
-          <!-- Example past event — duplicate + edit as needed -->
-          <div class="event">
-            <div class="event-photo">
-              <img src="gallagher.jpg" alt="Past speaker">
-            </div>
-            <div class="event-text">
-              <h2 class="event-name">
-                <a href="gallagher.html">Shaun Gallagher</a>
-              </h2>
-              <p class="event-meta">University of Memphis & University of Wollongong</p>
-              <p class="event-title">
-                Intelligence: From AI to ZI 
-              </p>
-              <p class="event-meta">
-                Wed, 14 January 2026
-              </p>
-            </div>
+        <div class="past-heading">Past events</div>
+        <div class="past-events">
+          <div class="past-event">
+            <p class="past-event-title">
+              UOW Expanding Minds Research Series – February Workshop
+            </p>
+            <p class="past-event-meta">
+              26–27 February 2026 · Research Hub, Building 19, Room 2072B
+            </p>
+            <p class="past-event-meta">
+              <a href="workshop.html">View schedule</a>
+            </p>
           </div>
-        </div> <!-- end .events (past) -->
+
+          <!-- You can add more past-event blocks here later -->
+        </div>
       </div> <!-- end .right -->
     </div> <!-- end .layout -->
   </div> <!-- end .wrap -->
